@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.screen-container {
+  height: 100vh;
+  width: 100%;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 40px;
+  border-bottom: 1px solid #1a1a1a;
+  position: relative;
+}
+
+/* Container 1: Homepage styling */
+.homepage {
+    justify-content: space-between;
+}
+
+.main-title h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  color: white;
+}
+
+.nav-section ul{
+    list-style: none;
+}
+
+.nav-section li {
+    margin-bottom: 15px;
+}
+
+.nav-section a {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-section a:hover {
+  opacity: 0.8;
+}
+
+.break-line {
+  display: block;
+  margin-top: 10px;
+}
+
+.nav-section {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.screen-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.screen-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8em;
+  color: goldenrod;
+  animation: bounce 2s infinite;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+}
